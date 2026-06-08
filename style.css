@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0d0d0f;
+    color: #e8e6e0;
+    font-family: 'Syne', sans-serif;
+}
+
+/* --- hero --- */
+#hero {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 48px;
+    z-index: 1;
+}
+
+#hero .tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: #5a9e6f;
+    letter-spacing: 0.12em;
+    margin-bottom: 16px;
+}
+
+#hero h1 {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+}
+
+#hero h1 span {
+    color: #4a8f64;
+}
+
+#hero .desc {
+    font-family: 'DM Mono', monospace;
+    font-size: 14px;
+    color: #888;
+    max-width: 420px;
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+
+#hero nav {
+    display: flex;
+    gap: 24px;
+}
+
+#hero nav a {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: #5a9e6f;
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    border-bottom: 1px solid #2a5e3f;
+    padding-bottom: 2px;
+}
+
+/* --- projects --- */
+#projects {
+    position: relative;
+    z-index: 2;
+    background: #111114;
+    border-radius: 16px 16px 0 0;
+    padding: 40px 48px;
+    box-shadow: 0 -16px 48px rgba(0, 0, 0, 0.6);
+}
+
+.section-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: #444;
+    letter-spacing: 0.15em;
+    margin-bottom: 24px;
+}
+
+.project-card {
+    background: #161619;
+    border: 0.5px solid #222;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 16px;
+}
+
+.project-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.stack {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.stack span {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: #555;
+    border: 0.5px solid #2a2a2e;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
