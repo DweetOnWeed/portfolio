@@ -13,15 +13,31 @@
 
 <body>
     <section id="hero">
-        <p class="tag">// systems engineer & security researcher</p>
-        <h1>Louis<span>.</span></h1>
-        <p class="desc">I build fast, safe systems in Rust and Python - from bare-metal kernels to network tooling and
-            automation</p>
-        <nav>
-            <a href="#projects">projects</a>
-            <a href="#about">about</a>
-            <a href="contact">contact</a>
-        </nav>
+        <div class="hero-left">
+            <p class="tag">// systems engineer & security researcher</p>
+            <h1>Louis<span>.</span></h1>
+            <p class="desc">I build fast, safe systems in Rust and Python - from bare-metal kernels to network tooling
+                and
+                automation</p>
+            <nav>
+                <a href="#projects">projects</a>
+                <a href="#about">about</a>
+                <a href="#contact">contact</a>
+            </nav>
+        </div>
+        <div class="hero-right">
+            <div class="terminal">
+                <div class="terminal-bar">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="terminal-title">bash</span>
+                </div>
+                <div class="terminal-body">
+                    <span class="prompt">~ &nbsp;</span><span id="typed"></span><span class="cursor">▋</span>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="projects">
@@ -40,6 +56,36 @@
                 <span>Rust</span><span>systems</span><span>automation</span>
             </div>
         </div>
+        <div class="project-card">
+            <h3>Pi Estate Bot</h3>
+            <p>A Bot on my Pi that scrapes apartment listings running as a systemd service with ntfy.sh push
+                notifications. (I'm a
+                student, I don't have time to look for apartments if my Pi can do it for me)</p>
+            <div class="stack">
+                <span>Rust</span><span>scraping</span><span>automation</span>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>Port Scanner</h3>
+            <p>Async port scanner with semaphore-bounded concurrency, banner grabbing and configurable timeouts.</p>
+            <div class="stack">
+                <span>Rust</span><span>tokio</span><span>security</span>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>WiFi Deauth Tool</h3>
+            <p>802.11 deauthentication via raw sockets, radiotap headers and bidirectional frame injection.</p>
+            <div class="stack">
+                <span>Rust</span><span>networking</span><span>security</span>
+            </div>
+        </div>
+        <div class="project-card">
+            <h3>WiFi MitM Tool</h3>
+            <p>ARP Poisoning via package injection that I used to learn and understand C better</p>
+            <div class="stack">
+                <span>C</span><span>networking</span><span>security</span>
+            </div>
+        </div>
     </section>
 
     <section id="about">
@@ -51,7 +97,7 @@
     <section id="contact">
         <p class="section-label">// contact</p>
         <h2>Get in touch</h2>
-        <a href="louisw.chemnitz9@gmail.com">E-Mail</a>
+        <a href="mailto:louisw.chemnitz9@gmail.com">E-Mail</a>
     </section>
 
     <script src="script.js"></script>
