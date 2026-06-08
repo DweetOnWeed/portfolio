@@ -18,7 +18,7 @@ body {
 #hero {
     position: sticky;
     top: 0;
-    height: 100vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -123,4 +123,53 @@ body {
     border: 0.5px solid #2a2a2e;
     padding: 3px 10px;
     border-radius: 20px;
+}
+
+/* --- about --- */
+#about {
+    position: relative;
+    z-index: 2;
+    background: #0d0d0f;
+    /* border-radius: 16px 16px 0 0; */
+    padding: 40px 48px;
+    box-shadow: 0 -16px 48px rgba(0, 0, 0, 0.7);
+}
+
+#about h2 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+}
+
+#about h2 span {
+    color: #4a8f64;
+}
+
+#about p {
+    font-family: 'DM Mono', monospace;
+    font-size: 14px;
+    color: #888;
+    line-height: 1.9;
+    max-width: 520px;
+}
+
+#contact {
+    position: relative;
+    z-index: 2;
+    background: #0d0d0f;
+    padding: 40px 48px;
+    box-shadow: 0 -16px 48px rgba(0, 0, 0, 0.7);
+}
+
+#contact h2 {
+    font-size: 40px;
+    color: #5a9e6f;
+}
+
+#contact a {
+    font-family: 'DM Mono', monospace;
+    font-size: 16px;
+    color: #2a5e3f;
+    line-height: 2;
 }
